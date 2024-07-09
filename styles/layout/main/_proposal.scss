@@ -1,0 +1,109 @@
+
+.proposal {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 704px) {
+    justify-content: space-evenly;
+  }
+
+  &__wrapper {
+    display: flex;
+    max-width: 1280px;
+
+    @media (max-width: 704px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  .text-block {
+    display: flex;
+    align-items: center;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 10px 0 0;
+
+      @media (max-width: 540px) {
+        padding: 10px 20px 0 0;
+        align-items: flex-end
+      }
+
+      @media (max-width: 704px) {
+        padding-top: 20px;
+        align-items: flex-end;
+        gap: 0;
+      }
+
+      @media (min-width: 705px) and (max-width: 1399px) {
+        padding: 0 10px 0 50px;
+      }
+    }
+    &__item {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 72px;
+
+      @media (max-width: 966px) {
+        font-size: 24px;
+        line-height: 35px;
+      }
+
+      &_small-font {
+        color: $highlightedFont;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+
+        @media (max-width: 458px) {
+          font-size: 13px;
+        }
+
+        @media (min-width: 459px) and (max-width: 704px) {
+          font-size: 14px;
+        }
+      }
+      &_red-font {
+        color: $decoratedFontColor;
+      }
+    }
+    
+    .button {  
+      @include button(55%);
+      
+      &_mt {
+        margin-top: 20px;
+      }
+      @media (max-width: 440px) {
+        width: 95%;
+        
+        &_mt {
+          margin-top: 30px;
+        }
+      }
+
+      @media (min-width: 441px) and (max-width: 704px) {
+        align-self: center;
+      }
+
+      @media (min-width: 705px) and (max-width: 965px) {
+        width: 70%;
+      }
+    }
+  }
+
+  &__preview {
+    @media (max-width: 704px) {
+      padding: 0 20px;
+    }
+    &__item {
+    }
+  }
+}

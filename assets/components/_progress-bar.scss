@@ -1,0 +1,22 @@
+.progress-bar {
+  background-color: $progressBarMain;
+  border-radius: 10px;
+  margin: 0 0 18px;
+  
+  &__description {
+    padding:  0 0 9px;
+
+    &_bold {
+      padding: 0;
+      font-weight: 800;
+      color: $progressBarHighlightedFont;
+    }
+  }
+
+  &__current {
+    background-color: $progressBarCurrent;
+    height: 4px;
+    border-radius: 10px;
+    width: 20%;
+  }
+}

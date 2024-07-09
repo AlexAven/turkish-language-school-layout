@@ -1,0 +1,28 @@
+.bulleted-list {
+  padding: 32px 0 17px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+  position: relative;
+
+  &__items {
+    padding-left: 32px;
+      
+    &::before {
+      content: url("./../assets/images/check.svg");
+      position: absolute;
+      left: 0;
+    }    
+  }
+
+  &__text {
+    
+    &_bold {
+      font-weight: 800;
+      vertical-align: super;
+    }
+  }
+
+  
+}

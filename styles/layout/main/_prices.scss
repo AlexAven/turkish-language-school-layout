@@ -1,0 +1,150 @@
+.prices {
+  @include name;
+  padding: 100px 0 150px;
+
+  @media (max-width: 415px) {
+    padding: 0;
+  }
+
+  @media (min-width: 416px) and (max-width: 599px) {
+    padding: 100px 0 40px;
+  }
+
+  @media (min-width: 600px) and (max-width: 1041px) {
+    padding: 100px 0 90px;
+  }
+  
+  &__container {
+    max-width: 1170px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @media (max-width: 599px) {
+      justify-content: space-around;
+    }
+
+    @media (min-width: 600px) and (max-width: 1041px) {
+      flex-wrap: wrap; 
+    }
+
+    .price-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+
+      @media (max-width: 415px) {
+        padding-bottom: 30px;
+      }
+
+      @media (min-width: 416px) and (max-width: 599px) {
+        gap: 0;
+        flex: none;
+        padding-bottom: 30px;
+        width: 80%;
+      }
+
+      @media (min-width: 600px) and (max-width: 1041px) {
+        padding-top: 35px;
+        width: 48%;
+        flex: none;
+      }
+
+      &__offer {
+        @include name;
+        flex-basis: 180px; 
+        border: 1px solid $priceBordersDecoration;
+        padding: 28px 20px;
+      }
+      &__sum {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        color: $highlightedFont;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 900;
+
+        @media (max-width: 415px) {
+          font-size: 32px;
+          line-height: 30px;
+        }
+
+        &_small-font {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        &_no-sum {
+          text-align: center;
+          font-size: 22px;
+          line-height: 26px;
+
+          @media (max-width: 415px) {
+          font-size: 18px;
+          line-height: 22px;
+          }
+        }
+      }
+      &__spacing {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        @media (max-width: 500px) {
+          display: none;
+        }
+      }
+      &__description {
+        color: $mainFontColor;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding-top: 16px;
+      }
+      
+      .button {
+        @include button(75%);
+        align-self: center;
+
+        &_mt {
+          margin-top: 32px;
+
+          @media (max-width: 415px) {
+            margin-top: 0;
+          }
+        }
+        &:hover{
+          background-color: $hoverButtonColor;
+        }
+      }
+      &__link {
+        text-align: center;
+        text-decoration: none;
+        font-weight: 800;
+        color: $linkFontColor;
+        
+        &_mt {
+          margin-top: 20px;
+        }
+        &::before {
+          padding-right: 12px;
+          content: url("./../assets/images/link-playButton.png");
+          position: relative;
+          top: 3px;
+        }
+        &:hover {
+          color: $hoverlinkFontColor;
+
+          &::before {
+            padding-right: 12px;
+            content: url("./../assets/images/hover-link-playButton.png");
+            position: relative;
+            top: 3px;
+          }
+        }
+      }
+    }
+  }  
+}

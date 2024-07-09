@@ -1,0 +1,69 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: $mainFontColor;
+}
+
+.header {
+  min-width: 310px;
+}
+
+.container  {
+  min-width: 310px;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: 1170px) {
+    padding: 0 50px;
+  }
+}
+
+.proposal {
+  min-width: 310px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.greeting {
+  min-width: 310px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 1170px) {
+    padding: 0 50px;
+  }
+}
+
+.prices {
+  min-width: 310px;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: 1170px) {
+    padding: 0 50px;
+  }
+
+  &__container {
+    @media (max-width: 1170px) {
+      padding: 0 50px;
+    }
+  }
+}
+
+.licence {
+  min-width: 310px;
+  max-width: 1440px;
+  margin: 0 auto;
+} 
+
+.partners {
+  min-width: 310px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.courses {
+  min-width: 310px;
+  max-width: 1440px;
+  margin: 0 auto;
+}

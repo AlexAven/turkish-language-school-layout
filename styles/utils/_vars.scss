@@ -1,0 +1,29 @@
+// COLORS
+$mainColor: #FFFFFF;
+$backgroundAlternativeColor: #3035C3;
+$coursesBackgroundColor: #F8F8FF;
+$mainFontColor: #23283B;
+$alternativeFontColor: #FFFFFF;
+$highlightedFont: #3035C3;
+$buttonColor: #E6514A;
+$buttonFontColor: #FFFFFF;
+$headerUnderlineColor: #DEDEFF;
+$hoverMenuColor: #3035C3;
+$hoverButtonColor: #BE312B;
+$decoratedFontColor: #E6514A;
+$dividerDecorationColor: #E6514A;
+$priceBordersDecoration: #DEDEFF;
+$linkFontColor: #3035C3;
+$hoverlinkFontColor: #BE312B;
+$progressBarMain: #DEDEFF;
+$progressBarCurrent: #E6514A;
+$progressBarHighlightedFont: #E6514A;
+
+// FONTS
+%headerFont {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 62px;
+  padding-bottom: 42px;
+}
+

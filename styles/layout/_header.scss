@@ -1,0 +1,182 @@
+.header {
+  background-color: $mainColor;
+  box-shadow: 5px 5px 12px rgb(214, 213, 213);
+  padding: 16px 0px;
+  font-weight: 700;
+  line-height: 17px;
+
+  @media screen and (max-width: 540px) {
+    padding: 28px 0;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
+
+    &__socials {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__phone {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 44px;
+
+    .phone {
+      &__item {
+        position: relative;
+        text-decoration: none;
+        color: $mainFontColor;
+
+        &::before {
+          position: absolute;
+          height: 16px;
+          width: 16px;
+          left: -25px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          content: url('../assets/images/phone-red.svg');
+        }
+        &:first-
+        child {
+          &::before {
+            content: url('../assets/images/phone-red.svg');
+          }
+        }
+        &:last-child {
+
+          &::before {
+            content: url('../assets/images/phone-green.svg');
+          }
+        }
+    } }
+    }
+  }
+
+  .decoration-line {
+    padding: 16px 0;
+    position: relative;
+
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      background-color: $headerUnderlineColor;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      &__pic {
+        object-fit: cover;
+      }
+    }
+
+    .navigation {
+      display: flex;
+
+      &__list {
+        display: flex;
+        gap: 32px;
+        padding-right: 44px;
+        align-items: center;
+        font-weight: 700;
+
+        @media screen and (max-width: 1080px) {
+          gap: 10px;
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+
+      }
+      .list {
+        &__item {
+          
+        }   
+        &__link {
+          text-decoration: none;
+          color: $mainFontColor;
+          &:hover {
+            cursor: pointer;
+            color: $hoverMenuColor;
+          }
+        }
+        &__btn {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          padding: 3px 20px;
+          font-weight: 700;
+          font-size: 14px;
+          color: $buttonFontColor;
+          background-color: $buttonColor;
+          border-radius: 40px;
+  
+          @media screen and (max-width: 992px) {
+            display: none;
+          }    
+  
+          &:hover {
+            background-color: $hoverButtonColor;
+          }
+          }
+
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+    margin-top: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: $mainFontColor;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: relative;
+      top: 9px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $mainFontColor;
+      content: "";
+      display: block;
+    }
+    &::after {
+      content: "";
+      position: relative;
+      top: 16px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $mainFontColor;
+      content: "";
+      display: block;
+    }
+
+    @media screen and (max-width: 992px) {
+      display: block;
+    }  
+  }
+}
