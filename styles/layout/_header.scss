@@ -15,6 +15,20 @@
 
     @media screen and (max-width: 540px) {
       display: none;
+      position: absolute;
+      top: 670px;
+      left: 0;
+      background-color: $mainColor;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      gap: 35px;
+      padding: 20px 0 35px;
+
+      &_opened {
+          display: flex;
+      }
     }
 
     &__socials {
@@ -27,6 +41,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 44px;
+
+      @media screen and (max-width: 540px) { 
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
 
     .phone {
       &__item {
@@ -65,15 +85,35 @@
 
     @media screen and (max-width: 540px) {
       display: none;
+      width: 100%;
+      top: 640px;
+      left: 0;
+      gap: 35px;
+      padding: 0;
+      z-index: 2;
+
+      &_opened {
+        display: block;
+      }
     }
 
     &::after {
       content: "";
+      position: absolute;
       background-color: $headerUnderlineColor;
       height: 1px;
       width: 100%;
-      position: absolute;
     }
+    @media screen and (max-width: 540px) {
+      content: "";
+      position: absolute;
+      background-color: $headerUnderlineColor;
+      height: 1px;
+      width: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);  
+    }
+
   }
 
   .menu {
@@ -89,6 +129,23 @@
     .navigation {
       display: flex;
 
+      @media screen and (max-width: 992px) {
+        display: none;
+        height: auto;
+        position: absolute;
+        top: 121px;
+        left: 0;
+        background-color: $mainColor;
+        flex-direction: column;
+        width: 100vw;
+        padding: 40px 0;
+        z-index: 1;
+
+        &_opened {
+          display: flex;
+        }
+      }
+
       &__list {
         display: flex;
         gap: 32px;
@@ -101,14 +158,20 @@
           font-size: 14px;
         }
 
-        @media screen and (max-width: 992px) {
-          display: none;
-        }
-
       }
       .list {
+
+        @media screen and (max-width: 992px) {
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          gap: 61px;
+          font-size: 29px;
+          padding-right: 0;
+        }
+
         &__item {
-          
+
         }   
         &__link {
           text-decoration: none;
@@ -131,10 +194,22 @@
           background-color: $buttonColor;
           border-radius: 40px;
   
-          @media screen and (max-width: 992px) {
-            display: none;
-          }    
-  
+          @media (max-width: 575px) {
+            width: 60%;
+            margin: 50px 0 40px;
+            padding: 20px;
+            align-self: center;
+            font-size: 18px;
+          }
+          
+          @media (min-width: 576px) and (max-width: 992px) {
+            width: 50%;
+            margin: 50px 0 40px;
+            padding: 20px;
+            align-self: center;
+            font-size: 18px;
+          }      
+          
           &:hover {
             background-color: $hoverButtonColor;
           }
@@ -146,37 +221,137 @@
 
   .burger {
     display: none;
-    margin-top: 5px;
-    width: 30px;
-    height: 3px;
-    background-color: $mainFontColor;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
     cursor: pointer;
 
-    &::before {
-      content: "";
-      position: relative;
-      top: 9px;
-      left: 0;
-      width: 100%;
-      height: 3px;
+    &__line {
       background-color: $mainFontColor;
-      content: "";
-      display: block;
-    }
-    &::after {
-      content: "";
-      position: relative;
-      top: 16px;
-      left: 0;
-      width: 100%;
+      width: 35px;
       height: 3px;
-      background-color: $mainFontColor;
-      content: "";
-      display: block;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $mainFontColor;
+        content: "";
+        display: block;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $mainFontColor;
+        content: "";
+        display: block;
+      }
     }
 
-    @media screen and (max-width: 992px) {
-      display: block;
-    }  
+    @media (max-width: 992px) {
+      display: flex;
+    }   
+  }
+  .burger_active .burger__line {
+    background-color: transparent;
+    animation: mainLine 0.3s;
+  }
+  .burger_active .burger__line::before {
+    transform: rotate(45deg);
+    top: 12px;
+    animation: lineBefore 0.6s;
+  }
+
+  .burger_active .burger__line::after {
+    transform: rotate(-45deg);
+    top: 12px;
+    animation: lineAfter 0.6s;
+  }
+  
+  .burger_inactive .burger__line::before {
+    transform: rotate(0deg);
+    top: 0;
+    animation: disclosureLineBefore 0.5s;
+  }
+  .burger_inactive .burger__line::after {
+    transform: rotate(0deg);
+    top: 27px;
+    animation: disclosureLineAfter 0.5s;
+  }
+
+  .burger_inactive .burger__line {
+    background-color: $mainFontColor;;
+    animation: mainLineDisclosure 1.5s;
+  }
+  
+  @keyframes mainLine {
+    from {
+      background-color: $mainFontColor;
+    }
+    to {
+      background-color: transparent;
+    }
+  }
+  
+  @keyframes mainLineDisclosure {
+    from {
+      background-color: transparent;
+    }
+    to {
+      background-color: $mainFontColor;
+    }
+  }
+  
+  @keyframes lineBefore {
+    from {
+      top: 0;
+      transform: rotate(0deg);
+    }
+    to {
+      top: 12px;
+      transform: rotate(45deg);
+    }
+  }
+  
+  @keyframes lineAfter {
+    from {
+      bottom: 0;
+      transform: rotate(0deg);
+    }
+    to {
+      top: 12px;
+      transform: rotate(-45deg);
+    }
+  }
+  
+  @keyframes disclosureLineBefore {
+    from {
+      top: 12px;
+      transform: rotate(45deg);
+    }
+    to {
+      top: 0;
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes disclosureLineAfter {
+    from {
+      top: 12px;
+      transform: rotate(-45deg);
+    }
+    to {
+      bottom: 0;
+      transform: rotate(0deg);
+    }
   }
 }
