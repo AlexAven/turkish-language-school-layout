@@ -20,6 +20,11 @@
 
   &__title {
     @extend %headerFont;
+    text-align: center;
+
+    &_small-font {
+      font-size: 35px;
+    }
 
     @media (max-width: 375px) {
       padding: 0;
@@ -34,6 +39,7 @@
     @media (min-width: 416px) and (max-width: 540px) {
       padding: 0;
       font-size: 22px;
+      line-height: 40px;
     }
 
     @media (min-width: 541px) and (max-width: 704px) {

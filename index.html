@@ -6,6 +6,8 @@
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
   <title>Школа турецкого языка</title>
 </head>
 <body>
@@ -333,146 +335,231 @@
       <h1 class="caption__title">
         Общий курс турецкого языка:
       </h1>
+    </div>    
+
+    <div class="tab">
+      <button class="tab__btn">A1 - начальный уровень</button>
+      <button class="tab__btn">A2</button>
+      <button class="tab__btn">B1</button>
+      <button class="tab__btn">B2</button>
+      <button class="tab__btn">C1</button>
+    </div>
+
+    <div class="tab__content">
+
+      <div class="nav-btn nav-btn_left">
+        <img class="nav-btn__chevron" src="./assets/images/chevron-left.svg" alt="navigate-left">
+      </div>
+      <div class="nav-btn nav-btn_right">
+        <img class="nav-btn__chevron" src="./assets/images/chevron-right.svg" alt="navigate-right">
+      </div>
+
+      <h2 class="tab__header">
+        ЧТО ВЫ БУДЕТЕ УМЕТЬ ПОСЛЕ ПРОХОЖДЕНИЯ НАЧАЛЬНОГО УРОВНЯ А1:
+      </h2>
+      <p class="tab__description">
+        По окончании данного уровня Вы можете простыми предложениями рассказать о себе, о своей семье, о своих друзьях, о работе, описать, что Вы любите и не любите делать, умеете спрашивать и отвечать который час, использовать цифры от 1 до 1 000, можете поддержать беседу на бытовые темы (ресторан, магазин, улица), задать простые вопросы собеседнику или ответить самому на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и напитках, о ежедневных делах. Можете написать простые предложения с приветствиями и поздравлениями друзьям и близким.
+      </p>
+
+      <div class="course">
+        <div class="course__item">
+          <h3 class="course__header">
+            ДЛЯ СПРАВКИ
+          </h3>
+          <ul class="bulleted-list">
+            <li class="bulleted-list__items">
+              <span class="bulleted-list__text bulleted-list__text_bold">
+                Длительность курса:
+              </span>
+              <p class="bulleted-list__text">
+                64 академических часа
+              </p>
+            </li>
+            <li class="bulleted-list__items">
+              <span class="bulleted-list__text bulleted-list__text_bold">
+                Длительность занятия:
+              </span>
+              <p class="bulleted-list__text">
+                2 ак.часа (90 минут)
+              </p>
+            </li>
+            <li class="bulleted-list__items">
+              <span class="bulleted-list__text bulleted-list__text_bold">
+                Уровень подготовки:
+              </span>
+              <p class="bulleted-list__text">
+                Законченный уровень A 1
+              </p>
+            </li>
+            <li class="bulleted-list__items">
+                В случае, если Вы не освоите материал курса, то сможете пройти его повторно по гарантии качества абсолютно бесплатно
+            </li>
+          </ul>
+        </div>
+
+        <div class="course__item course__structure">
+
+          <h3 class="course__header">
+            СТРУКТУРА КУРСА
+          </h3>
+
+          <div class="course__structure-item">
+            <p class="progress-bar__description">
+              Говорение - 
+              <span class="progress-bar__description progress-bar__description_bold">
+                40%
+              </span>
+            </p>
+            <div class="progress-bar">
+              <div class="progress-bar__current"></div>
+            </div>
+          </div>
+
+          <div class="course__structure-item">
+            <p class="progress-bar__description">
+              Грамматика - 
+              <span class=" progress-bar__description progress-bar__description_bold">
+                20%
+              </span>
+            </p>
+            <div class="progress-bar">
+              <div class="progress-bar__current"></div>
+            </div>
+          </div>
+          
+          <div class="course__structure-item">
+            <p class="progress-bar__description">
+              Аудирование - 
+              <span class="progress-bar__description progress-bar__description_bold">
+                20%
+              </span>
+            </p>
+            <div class="progress-bar">
+              <div class="progress-bar__current"></div>
+            </div>
+          </div>
+          
+          <div class="course__structure-item">
+            <p class="progress-bar__description">
+              Чтение - 
+              <span class="progress-bar__description progress-bar__description_bold">
+                10%
+              </span>
+            </p>
+            <div class="progress-bar">
+              <div class="progress-bar__current"></div>
+            </div>
+          </div>
+          
+          <div class="course__structure-item">
+            <p class="progress-bar__description">
+              Письмо - 
+              <span class="progress-bar__description progress-bar__description_bold">
+                10%
+              </span>
+            </p>
+            <div class="progress-bar">
+              <div class="progress-bar__current"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course__item course__literature">
+          <h3 class="course__header">
+            УЧЕБНЫЕ МАТЕРИАЛЫ
+          </h3>
+          <img class="course__image" src="./assets/images/book.png" alt="study-book">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="teachers">
+
+    <div class="caption">
+      <h2 class="caption__divider">
+        ПРЕПОДАВАТЕЛИ
+      </h2>
+      <h1 class="caption__title caption__title_small-font">
+        Наши преподаватели турецкого языка:
+      </h1>
+    </div> 
+    
+    <div class="carousel swiper mySwiper">
+
+      <div class="swiper-wrapper">
+
+        <div class="carousel__item swiper-slide">
+          <img class="carousel__photo" src="./assets/images/teachers.png" alt="teacher-photo" >
+          <h3 class="carousel__name">
+            Озджан Бей
+          </h3>
+          <p class="carousel__descripton">
+            Здравствуйте!
+            Меня зовут Озджан. Я работаю в языковом центре «Диалог» более 5 лет. За это время многие мои студенты научились очень хорошо говорить на моем родном и любимом турецком языке. Я веду групповые и индивидуальные занятия. Люблю, когда атмосфера на занятиях располагает к тому, чтобы обучение проходило легко, но эффективно. Жду вас в нашей школе!
+          </p>
+        </div>
         
-      <div class="tab">
-        <button class="tab__btn">A1 - начальный уровень</button>
-        <button class="tab__btn">A2</button>
-        <button class="tab__btn">B1</button>
-        <button class="tab__btn">B2</button>
-        <button class="tab__btn">C1</button>
-      </div>
-
-      <div class="tab__content">
-
-        <div class="nav-btn nav-btn_left">
-          <img class="nav-btn__chevron" src="./assets/images/chevron-left.svg" alt="navigate-left">
+        <div class="carousel__item swiper-slide">
+          <img class="carousel__photo" src="./assets/images/teachers.png" alt="teacher-photo">
+          <h3 class="carousel__name">
+            Айдемир Бей
+          </h3>
+          <p class="carousel__descripton">
+            Здравствуйте, меня зовут Айдемир. Я турок, приехал из Стамбула, где учился и работал. В России живу более 12 лет. В Москве окончил РУДН. Работаю преподавателем более 8 лет, веду групповые и индивидуальные занятия. Моя работа позволяет мне каждый день помогать моим студентам осваивать основы турецкого языка и совершенствовать уже пройденный материал. Я очень рад, что многие из моих учеников в дальнейшем применяют свои знания на практике, как в работе так и для личного общения. Жду Вас на своих занятиях!
+          </p>
         </div>
-        <div class="nav-btn nav-btn_right">
-          <img class="nav-btn__chevron" src="./assets/images/chevron-right.svg" alt="navigate-right">
+  
+        <div class="carousel__item swiper-slide">
+          <img class="carousel__photo" src="./assets/images/teachers.png" alt="teacher-photo">
+          <h3 class="carousel__name">
+            Ирина Ханым
+          </h3>
+          <p class="carousel__descripton">
+            Ведущий преподаватель курсов. Выпускница Анкарского Университета, педагог с большим опытом преподавания турецкого языка, профессиональный переводчик. Имеет изданные пособия по изучению турецкого языка. Использует собственные методики преподавания. Около 30 лет постоянно проживает в Турции , владеет языком на уровне носителя, регулярно участвует в конференциях и семинарах по развитию методик обучения турецкому языку иностранцам. Принимала непосредственное участие в создании учебника "Хитит", изданного языковым и исследовательским центром изучения и развития турецкого Tömer.
+          </p>
         </div>
-
-        <h2 class="tab__header">
-          ЧТО ВЫ БУДЕТЕ УМЕТЬ ПОСЛЕ ПРОХОЖДЕНИЯ НАЧАЛЬНОГО УРОВНЯ А1:
-        </h2>
-        <p class="tab__description">
-          По окончании данного уровня Вы можете простыми предложениями рассказать о себе, о своей семье, о своих друзьях, о работе, описать, что Вы любите и не любите делать, умеете спрашивать и отвечать который час, использовать цифры от 1 до 1 000, можете поддержать беседу на бытовые темы (ресторан, магазин, улица), задать простые вопросы собеседнику или ответить самому на темы, связанные с аспектами бытовой жизни: об отдыхе, о еде и напитках, о ежедневных делах. Можете написать простые предложения с приветствиями и поздравлениями друзьям и близким.
-        </p>
-
-        <div class="course">
-          <div class="course__item">
-            <h3 class="course__header">
-              ДЛЯ СПРАВКИ
-            </h3>
-            <ul class="bulleted-list">
-              <li class="bulleted-list__items">
-                <span class="bulleted-list__text bulleted-list__text_bold">
-                  Длительность курса:
-                </span>
-                <p class="bulleted-list__text">
-                  64 академических часа
-                </p>
-              </li>
-              <li class="bulleted-list__items">
-                <span class="bulleted-list__text bulleted-list__text_bold">
-                  Длительность занятия:
-                </span>
-                <p class="bulleted-list__text">
-                  2 ак.часа (90 минут)
-                </p>
-              </li>
-              <li class="bulleted-list__items">
-                <span class="bulleted-list__text bulleted-list__text_bold">
-                  Уровень подготовки:
-                </span>
-                <p class="bulleted-list__text">
-                  Законченный уровень A 1
-                </p>
-              </li>
-              <li class="bulleted-list__items">
-                  В случае, если Вы не освоите материал курса, то сможете пройти его повторно по гарантии качества абсолютно бесплатно
-              </li>
-            </ul>
-          </div>
-
-          <div class="course__item course__structure">
-
-            <h3 class="course__header">
-              СТРУКТУРА КУРСА
-            </h3>
-
-            <div class="course__structure-item">
-              <p class="progress-bar__description">
-                Говорение - 
-                <span class="progress-bar__description progress-bar__description_bold">
-                  40%
-                </span>
-              </p>
-              <div class="progress-bar">
-                <div class="progress-bar__current"></div>
-              </div>
-            </div>
-
-            <div class="course__structure-item">
-              <p class="progress-bar__description">
-                Грамматика - 
-                <span class=" progress-bar__description progress-bar__description_bold">
-                  20%
-                </span>
-              </p>
-              <div class="progress-bar">
-                <div class="progress-bar__current"></div>
-              </div>
-            </div>
-            
-            <div class="course__structure-item">
-              <p class="progress-bar__description">
-                Аудирование - 
-                <span class="progress-bar__description progress-bar__description_bold">
-                  20%
-                </span>
-              </p>
-              <div class="progress-bar">
-                <div class="progress-bar__current"></div>
-              </div>
-            </div>
-            
-            <div class="course__structure-item">
-              <p class="progress-bar__description">
-                Чтение - 
-                <span class="progress-bar__description progress-bar__description_bold">
-                  10%
-                </span>
-              </p>
-              <div class="progress-bar">
-                <div class="progress-bar__current"></div>
-              </div>
-            </div>
-            
-            <div class="course__structure-item">
-              <p class="progress-bar__description">
-                Письмо - 
-                <span class="progress-bar__description progress-bar__description_bold">
-                  10%
-                </span>
-              </p>
-              <div class="progress-bar">
-                <div class="progress-bar__current"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="course__item course__literature">
-            <h3 class="course__header">
-              УЧЕБНЫЕ МАТЕРИАЛЫ
-            </h3>
-            <img class="course__image" src="./assets/images/book.png" alt="study-book">
-          </div>
+  
+        <div class="carousel__item swiper-slide">
+          <img class="carousel__photo" src="./assets/images/teachers.png" alt="teacher-photo">
+          <h3 class="carousel__name">Серкан Болат</h3>
+          <p class="carousel__descripton">
+            Эда живёт вместе со своей тётей и работает в семейном цветочном магазине. Она мечтает уехать на стажировку в Италию, но лишается стипендии, которую местное архитектурное бюро Art Life выделяет для талантливых студентов. Обидевшись, девушка решает отомстить его владельцу, молодому и талантливому архитектору Серкану Болату.
+          </p>
+        </div>
+  
+        <div class="carousel__item swiper-slide">
+          <img class="carousel__photo" src="./assets/images/teachers.png" alt="teacher-photo">
+          <h3 class="carousel__name">Халит Эргенч</h3>
+          <p class="carousel__descripton">
+            Сюжет основан на реальных событиях, произошедших во времена правления султана Сулеймана I, и рассказывает о периоде жизни девушки Александры, взятой в плен турками и названной Хюррем. Позже она стала первой официальной женой Сулеймана, но для этого ей пришлось пройти сложный путь.
+          </p>
+        </div>
+        
+        <div class="carousel__item swiper-slide">
+          <img class="carousel__photo" src="./assets/images/teachers.png" alt="teacher-photo">
+          <h3 class="carousel__name">Берен Саат</h3>
+          <p class="carousel__descripton">
+            Настоящая власть пришла к Кёсем лишь после смерти мужа в 1617 году. Янычары сместили следующих султанов – Мустафу I, психически не здорового брата султана, и Османа II, старшего сына Ахмеда и Махфируз, первой любви падишаха. К этому времени Кёсем, находясь вдали от дворца, успела выдать своих повзрослевших дочек за влиятельных османских пашей, окружив себя сильной партией союзников. После Османа, не имевшего детей, на трон взошел сын Ахмеда I – Мурад. Так началось правление самой известной Валиде, получившей титул регента три раза.
+          </p>
+        </div>
+        <div class="carousel__item swiper-slide">
+          <img class="carousel__photo" src="./assets/images/teachers.png" alt="teacher-photo">
+          <h3 class="carousel__name">Эмрах Эльчибога</h3>
+          <p class="carousel__descripton">
+            Когда-то величайшая Османская империя, которая уже много лет воюет с Россией, погрязла в глубоком кризисе и упадке. Турки, с оптимизмом, всё еще верят, что слава Османской Империи возродится и снова настанет новый великолепный век Турции. Однако, сидящий на престоле султан Мустафа смертельно болен и перед элитой Турции встал важный вопрос: кому быть преемником?
+          </p>
         </div>
 
       </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
 
   </section>
-  <!-- <script type="module" src="./scripts/index.js"></script> -->
   <script src="./styles/scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./styles/scripts/swiper-loader.js"></script>
 </body>
 </html>

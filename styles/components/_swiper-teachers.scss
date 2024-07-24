@@ -1,0 +1,38 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+  &-pagination {
+
+    &-bullet {
+      opacity: 1 !important;
+      background-color: rgb(221, 217, 217) !important;
+      margin: 0 20px !important;
+
+      &:hover {
+        background-color: $highlightedFont !important;
+      }
+      
+      &-active {
+        background-color: $progressBarCurrent !important;
+      }
+    }
+  }
+  
+  &-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+}
+
