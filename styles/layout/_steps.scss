@@ -1,0 +1,88 @@
+.steps {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+
+  .white-font {
+    color: rgb(255, 255, 255);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (max-width: 641px) {
+      width: 100%;
+      line-height: 40px;
+    }
+
+    
+    .caption__divider {
+      position: relative;
+      left: 45px;
+
+      @media (max-width: 339px) {
+        padding-bottom: 0;
+      }
+
+      &::before {
+        @media (max-width: 641px) {
+          top: 20px
+        }
+      }
+    }
+    .caption__title {
+      text-align: start;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__banner {
+    width: 1170px;
+    height: 493px;
+    padding: 80px 70px;
+    background-image: url("../assets/images/steps.png");
+    background-size: 100% 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media (max-width: 641px) {
+      background-size: auto 100%;
+      background-position: -250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+  }
+  &__list {
+    width: 50%;
+    color: #fff;
+    counter-reset: custom-counter;
+    list-style: none;
+
+    @media (max-width: 641px) {
+      width: 100%;
+    }
+
+    &-item {
+      counter-increment: custom-counter;
+      padding-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+
+      &::before {
+        content: counter(custom-counter) ". ";
+        font-size: 24px;
+        color: $decoratedFontColor;
+        font-weight: 800;
+        position: absolute;
+        left: 0;
+        top: -7px;
+      }
+    }
+  }
+}

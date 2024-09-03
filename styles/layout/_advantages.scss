@@ -1,0 +1,28 @@
+.advantages {
+  margin: 0 auto;
+  padding: 60px 20px;
+  .facts {
+    display: flex;
+    max-width: 1170px;
+    justify-content: space-evenly;
+    flex-grow: 1;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-picture {
+        width: 168px;
+      }
+
+      &-header {
+
+      }
+
+      &-paragraph {
+
+      }
+    }
+  }
+}
