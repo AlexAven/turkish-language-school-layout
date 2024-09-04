@@ -657,6 +657,12 @@ body {
   margin: 0 auto;
 }
 
+.questions {
+  min-width: 310px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url(../assets/fonts/Montserrat.ttf) format("truetype");
@@ -1992,6 +1998,71 @@ body {
   .advantages .btn:hover {
     background-color: #BE312B;
   }
+}
+
+.questions {
+  display: flex;
+  justify-content: center;
+}
+.questions__banner {
+  max-width: 1140px;
+  display: flex;
+  align-content: center;
+  flex-grow: 1;
+  background-image: url("../assets/images/questions.png");
+  background-size: 100% 100%;
+  padding: 100px 150px;
+  gap: 140px;
+  align-items: center;
+}
+@media (max-width: 764px) {
+  .questions__banner {
+    flex-direction: column;
+    gap: 80px;
+    padding: 80px 60px;
+    background-size: auto;
+  }
+}
+@media (min-width: 765px) and (max-width: 929px) {
+  .questions__banner {
+    padding: 60px 35px;
+    gap: 40px;
+  }
+}
+@media (min-width: 930px) and (max-width: 1053px) {
+  .questions__banner {
+    padding: 100px 100px;
+    gap: 100px;
+  }
+}
+.questions__banner .content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 28px;
+}
+.questions__banner .content__header {
+  font-size: 44px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+.questions__banner .content__paragraph {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+}
+.questions__banner .btn {
+  width: 100%;
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #E6514A;
+  border-radius: 30px;
+  height: 50px;
+}
+.questions__banner .btn:hover {
+  background-color: #BE312B;
 }
 
 .caption {
