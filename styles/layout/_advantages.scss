@@ -1,28 +1,65 @@
 .advantages {
-  margin: 0 auto;
   padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // gap: 80px;
+
   .facts {
     display: flex;
+    flex-grow: 1;
     max-width: 1170px;
     justify-content: space-evenly;
-    flex-grow: 1;
+    gap: 120px;
+    padding: 20px 20px 80px;
+
+    @media (max-width: 599px) {
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: 600px) and (max-width: 699px) {
+      gap: 40px;
+      padding: 20px 40px 80px;
+    }
+
+    @media (min-width: 700px) and (max-width: 770px) {
+      gap: 80px;
+    }
 
     &__item {
+      max-width: 250px;
       display: flex;
+      flex-grow: 1;
       flex-direction: column;
       align-items: center;
 
       &-picture {
-        width: 168px;
+        min-width: 168px;
+        min-height: 168px;
       }
 
       &-header {
-
+        font-size: 18px;
+        font-weight: 800;
+        padding-bottom: 12px;
       }
 
       &-paragraph {
-
+      text-align: center;
       }
+    }
+  }
+  .btn {
+    @include button(25%);
+
+    @media (max-width: 599px) {
+      @include button(60%);
+    }
+
+    @media (min-width: 600px) and (max-width: 770px) {
+      @include button(50%);
     }
   }
 }

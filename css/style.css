@@ -1903,23 +1903,97 @@ body {
 }
 
 .advantages {
-  margin: 0 auto;
   padding: 60px 20px;
-}
-.advantages .facts {
-  display: flex;
-  max-width: 1170px;
-  justify-content: space-evenly;
-  flex-grow: 1;
-}
-.advantages .facts__item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.advantages .facts__item-picture {
-  width: 168px;
+.advantages .facts {
+  display: flex;
+  flex-grow: 1;
+  max-width: 1170px;
+  justify-content: space-evenly;
+  gap: 120px;
+  padding: 20px 20px 80px;
 }
+@media (max-width: 599px) {
+  .advantages .facts {
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 600px) and (max-width: 699px) {
+  .advantages .facts {
+    gap: 40px;
+    padding: 20px 40px 80px;
+  }
+}
+@media (min-width: 700px) and (max-width: 770px) {
+  .advantages .facts {
+    gap: 80px;
+  }
+}
+.advantages .facts__item {
+  max-width: 250px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages .facts__item-picture {
+  min-width: 168px;
+  min-height: 168px;
+}
+.advantages .facts__item-header {
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 12px;
+}
+.advantages .facts__item-paragraph {
+  text-align: center;
+}
+.advantages .btn {
+  width: 25%;
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #E6514A;
+  border-radius: 30px;
+}
+.advantages .btn:hover {
+  background-color: #BE312B;
+}
+@media (max-width: 599px) {
+  .advantages .btn {
+    width: 60%;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #E6514A;
+    border-radius: 30px;
+  }
+  .advantages .btn:hover {
+    background-color: #BE312B;
+  }
+}
+@media (min-width: 600px) and (max-width: 770px) {
+  .advantages .btn {
+    width: 50%;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #E6514A;
+    border-radius: 30px;
+  }
+  .advantages .btn:hover {
+    background-color: #BE312B;
+  }
+}
+
 .caption {
   display: flex;
   flex-direction: column;
