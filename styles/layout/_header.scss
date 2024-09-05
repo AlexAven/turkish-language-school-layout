@@ -181,42 +181,42 @@
             color: $hoverMenuColor;
           }
         }
-        &__btn {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 10px;
-          justify-content: center;
-          align-items: center;
-          padding: 3px 20px;
-          font-weight: 700;
-          font-size: 14px;
-          color: $buttonFontColor;
-          background-color: $buttonColor;
-          border-radius: 40px;
-  
-          @media (max-width: 575px) {
-            width: 60%;
-            margin: 50px 0 40px;
-            padding: 20px;
-            align-self: center;
-            font-size: 18px;
-          }
-          
-          @media (min-width: 576px) and (max-width: 992px) {
-            width: 50%;
-            margin: 50px 0 40px;
-            padding: 20px;
-            align-self: center;
-            font-size: 18px;
-          }      
-          
-          &:hover {
-            background-color: $hoverButtonColor;
-          }
-          }
-
+        
       }
     }
+      .btn {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      padding: 3px 20px;
+      font-weight: 700;
+      font-size: 14px;
+      color: $buttonFontColor;
+      background-color: $buttonColor;
+      border-radius: 40px;
+
+      @media (max-width: 575px) {
+        width: 60%;
+        margin: 50px 0 40px;
+        padding: 20px;
+        align-self: center;
+        font-size: 18px;
+      }
+      
+      @media (min-width: 576px) and (max-width: 992px) {
+        width: 50%;
+        margin: 50px 0 40px;
+        padding: 20px;
+        align-self: center;
+        font-size: 18px;
+      }      
+      
+      &:hover {
+        background-color: $hoverButtonColor;
+      }
+      }
   }
 
   .burger {

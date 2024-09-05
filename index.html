@@ -11,9 +11,47 @@
   <title>Школа турецкого языка</title>
 </head>
 <body>
+
+  <div class="modal">
+    <div class="modal__content content">
+      <div class="content__picture"></div>
+      <div class="content__application application">
+        <span class="btn-close">&#215;</span>
+        <h1 class="application__header">
+          Подача заявки
+        </h1>
+        <p class="application__paragraph">
+          Оставьте свои контактные данные и наш менеджер свяжется с Вами в ближайшее время
+        </p>
+        <form class="application__form">
+
+          <label for="name">
+            <h4 class="application__caption">Ваше Имя и Фамилия</h4>
+            <input class="application__input" type="text" name="name" placeholder="Имя и Фамилия">
+          </label>
+  
+          <label for="phone">
+            <h4 class="application__caption">Ваш телефон/whatsapp</h4>
+            <input class="application__input" type="text" name="phone" placeholder="Телефон/Whatsapp">
+          </label>
+          
+          <label for="email">
+            <h4 class="application__caption">Ваш e-mail</h4>
+            <input class="application__input" type="text" name="email" placeholder="E-mail">
+          </label>
+  
+          <button class="btn-modal">Подать заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <header class="header">
+
     <div class="container">
+      
       <div class="contacts">
+        
         <div class="contacts__socials socials">
           <a class="socials__item" href="https://vk.me/feyaturetskogo" method="GET" target="_blank">
             <img src="./assets/images/vk.svg" alt="vk-logo">
@@ -25,6 +63,7 @@
             <img src="./assets/images/facebook.svg" alt="facebook-logo">
           </a>
         </div>
+        
         <div class="contacts__phone">
           <a class="phone__item" href="tel:+74952553020">
             +7 (495) 255-30-20
@@ -33,8 +72,9 @@
             +7 (915) 359-95-19
           </a>
         </div>
+        
       </div>
-  
+      
       <div class="decoration-line"></div>
       
       <div class="menu">
@@ -45,26 +85,32 @@
           <span class="burger__line"></span>
         </div>
         <nav class="navigation">
-  
+          
           <ul class="navigation__list list">
+            
             <li class="list__item">
               <a class="list__link" href="#">О центре</a>
             </li>
+            
             <li class="list__item">
               <a class="list__link" href="#">Онлайн обучение</a>
             </li>
+            
             <li class="list__item">
               <a class="list__link" href="#">Отзывы</a>
             </li>
+            
             <li class="list__item">
               <a class="list__link" href="#">База знаний</a>
             </li>
+            
             <li class="list__item">
               <a class="list__link" href="#">Контакты</a>
             </li>
+            
           </ul>
-
-          <button class="list__btn">
+          
+          <button class="btn">
             <img src="./assets/images/btn-phone.png" alt="">
             Заказать звонок
           </button>
@@ -72,8 +118,9 @@
       </div>
     </div>
   </header>
-
+  
   <main class="main">
+
     <section class="proposal">
       <div class="proposal__wrapper">
         <div class="text-block">
@@ -88,7 +135,7 @@
                 через 2 месяца
               </span>
             </h1>
-            <button class="button button_mt">
+            <button class="btn btn_mt">
               Записаться на пробный урок
             </button>
           </div>
@@ -164,7 +211,7 @@
               Разговорный клуб
             </li>
           </ul>
-          <button class="button button_mt">Получить</button>
+          <button class="btn btn_mt">Получить</button>
           <a href="#" class="price-item__link price-item__link_mt">
             Смотреть презентацию
           </a>
@@ -200,7 +247,7 @@
                 Вы выбираете время занятий
               </li>
           </ul>
-          <button class="button button_mt">Получить</button>
+          <button class="btn btn_mt">Получить</button>
           <a href="#" class="price-item__link price-item__link_mt">
             Смотреть презентацию
           </a>
@@ -237,7 +284,7 @@
                 Закрытый форум для общения
               </li>
           </ul>
-          <button class="button button_mt">Получить</button>
+          <button class="btn btn_mt">Получить</button>
           <a href="#" class="price-item__link price-item__link_mt">
             Смотреть презентацию
           </a>
@@ -268,7 +315,7 @@
               </li>
           </ul>
 
-          <button class="button button_mt">Получить</button>
+          <button class="btn btn_mt">Получить</button>
           <a href="#" class="price-item__link price-item__link_mt">
             Смотреть презентацию
           </a>
@@ -560,7 +607,6 @@
   </section>
 
   <section class="steps">
-
     <div class="steps__banner">
 
       <div class="caption white-font">
@@ -585,11 +631,9 @@
       </ol>
 
     </div>
-
   </section>
 
   <section class="advantages">
-
     <div class="caption">
       <h2 class="caption__divider">
         ПРЕИМУЩЕСТВА
@@ -600,28 +644,30 @@
     </div>   
 
     <div class="facts">
+
       <div class="facts__item">
         <img class="facts__item-picture" src="./assets/images/fact1.png" alt="advantage-1">
         <h3 class="facts__item-header">12000 студентов</h3>
         <p class="facts__item-paragraph">За 16 лет мы обучили свободному общению</p>
       </div>
+
       <div class="facts__item">
         <img class="facts__item-picture" src="./assets/images/fact2.png" alt="advantage-2">
         <h3 class="facts__item-header">1125 из них</h3>
         <p class="facts__item-paragraph">Переехали на ПМЖ в Турцию</p>
       </div>
+
       <div class="facts__item">
         <img class="facts__item-picture" src="./assets/images/fact3.png" alt="advantage-3">
         <h3 class="facts__item-header">4169 студентов</h3>
         <p class="facts__item-paragraph">Получили работу в турецких кампаниях</p>
       </div>
+
     </div>
     <button class="btn">Записаться на пробный урок</button>
-
   </section>
 
   <section class="questions">
-
     <div class="questions__banner">
       <div class="content">
         <h2 class="content__header">
@@ -633,7 +679,6 @@
       </div>
       <button class="btn">Задать вопрос</button>
     </div>
-
   </section>
 
   <footer class="footer">
@@ -692,11 +737,6 @@
 
         </ul>
 
-      <!-- </nav>
-
-
-      <nav class="navigation"> -->
-
         <ul class="navigation__list">
 
           <li class="navigation__item">
@@ -734,6 +774,7 @@
       </nav>
 
       <div class="location">
+
         <div class="adress">
           <h4 class="location__header">
             Адрес
@@ -742,6 +783,7 @@
             г. Москва, пл. Тверская застава д. 3, 4 этаж, оф. 410
           </p>
         </div>
+        
         <div class="worktime">
           <h4 class="location__header">
             Время работы
@@ -750,6 +792,7 @@
             Мы работаем ежедневно с 9:00 до 21:00
           </p>
         </div>
+
         <div class="contacts">
           <h4 class="location__header">
             Контакты
@@ -761,6 +804,7 @@
             +7 (915) 359-95-19
           </a>
         </div>
+        
       </div>
       
     </div>
@@ -787,10 +831,12 @@
         </a>
         
       </div>
+
       <div class="terms">
         <a class="terms__link" href="#">Информация о платежах</a>
         <a class="terms__link" href="#">Соглашение об обработке персональных данных</a>
       </div>
+      
     </div>
 
   </footer>
